@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Main</title>
+		<meta content="" name="description">
+		<meta content="" name="keywords">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<meta content="ie=edge" http-equiv="x-ua-compatible">
+		<link rel="stylesheet" href="assets/styles/main.min.css">
+	</head>
+</html>
+<body>
+	<div class="welcome">
+		<section class="section">
+			<div class="welcome__top">
+				<div class="login"><a class="login__link changeBox" href="#">Авторизоваться</a></div>
+			</div>
+			<div class="welcome__center">
+				<div class="box-effect effect__click">
+					<div class="box-effect__front">
+						<div class="main">
+							<div class="main__box">
+								<div class="avatar">
+									<div class="avatar__box"><img class="avatar__img" src="assets/images/ava.png" alt="avatar"></div>
+									<div class="avatar__title">
+										<h1 class="avatar__i">Владимир Астахов</h1>
+										<div class="avatar__info">Личный сайт веб разработчика</div>
+									</div>
+								</div>
+								<div class="main__socials">
+									<ul class="icons">
+										<li class="icons__item"><a class="icons__link" href="https://vk.com/id27837868" target="_blank">
+												<svg class="vk" width="31" height="17">
+													<use class="vk__icon icon" xlink:href="assets/images/sprite.svg#vk"></use>
+												</svg></a></li>
+										<li class="icons__item"><a class="icons__link" href="https://github.com/Red02Raccoon" target="_blank">
+												<svg class="github" width="26" height="22">
+													<use class="github__icon icon" xlink:href="assets/images/sprite.svg#github"></use>
+												</svg></a></li>
+										<li class="icons__item"><a class="icons__link" href="https://www.linkedin.com" target="_blank">
+												<svg class="in" width="24" height="22">
+													<use class="in__icon icon" xlink:href="assets/images/sprite.svg#in"></use>
+												</svg></a></li>
+									</ul>
+								</div>
+							</div>
+							<nav class="nav">
+								<ul class="nav__list">
+									<li class="nav__item"><a class="nav__link" href="works.html">Мои работы</a></li>
+									<li class="nav__item"><a class="nav__link" href="about.html">Обо мне</a></li>
+									<li class="nav__item"><a class="nav__link" href="blog.html">Блог</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="box-effect__back">
+						<div class="enter">
+							<div class="enter__title">
+								<h1 class="enter__text title">Авторизуйтесь</h1>
+							</div>
+							<form class="form" action="#">
+								<div class="login-name">
+									<label class="login-name__icon fa fa-user" for="name"></label>
+									<input class="login-name__field" type="text" name="name" id="name">
+								</div>
+								<div class="password">
+									<label class="password__icon fa fa-key" for="password"></label>
+									<input class="password__field" type="password" id="password" name="password">
+								</div>
+								<div class="checkbox">
+									<input class="checkbox__item" type="checkbox" id="check" name="check" value="yes">
+									<label class="checkbox__label" for="check"><i class="fa fa-check checkbox__icon" aria-hidden="true"></i></label><span class="checkbox__text">Я человек</span>
+								</div>
+								<div class="radio">
+									<div class="radio__title">Вы точно не робот?</div>
+									<div class="radio__var">
+										<div class="radio__sure">
+											<input class="radio__item" name="sure" type="radio" value="yes" id="sure">
+											<label class="radio__label" for="sure"></label><span class="radio__text">Да</span>
+										</div>
+										<div class="radio__no">
+											<input class="radio__item" name="sure" type="radio" value="no" id="no">
+											<label class="radio__label" for="no"></label><span class="radio__text">Не уверен</span>
+										</div>
+									</div>
+								</div>
+							</form>
+							<nav class="nav">
+								<ul class="nav__list">
+									<li class="nav__item"><a class="nav__link changeBox" href="#">На главную</a></li>
+									<li class="nav__item"><a class="nav__link" href="">Войти</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="welcome__bottom">
+				<div class="bottom-text">© Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
+			</div>
+		</section>
+	</div>
+	<script src="assets/scripts/components/flip.js"></script>
+</body>

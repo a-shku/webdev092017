@@ -1,0 +1,130 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Обо мне
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        link(rel='stylesheet' href='assets/styles/main.min.css')
+    body
+        .fullscreen
+            nav.nav-footer.nav-footer--fullscreen
+                ul.nav-footer__list.nav-footer__list--fullscreen
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="works.html").nav-footer__link.nav-footer__link.nav-footer__link--fullscreen Мои работы
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="about.html").nav-footer__link.nav-footer__link--fullscreen Обо мне
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="blog.html").nav-footer__link.nav-footer__link--fullscreen Блог
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="login.html").nav-footer__link.nav-footer__link--fullscreen Авторизация
+        .blog
+            section.blog-section-1
+                .blog-section-1__header.blog-section-1--container
+                    .blog-section-1__left
+                        ul.icons
+                            li.icons__item
+                                a(href="https://vk.com/id27837868" target="_blank" class='icons__link')
+                                    svg(width="31" height="17").vk
+                                        use(xlink:href="assets/images/sprite.svg#vk").vk__icon.icon
+                            li.icons__item
+                                a(href="https://github.com/Red02Raccoon" class='icons__link' target="_blank")
+                                    svg(width="26" height="22").github
+                                        use(xlink:href="assets/images/sprite.svg#github").github__icon.icon
+                            li.icons__item
+                                a(href="https://www.linkedin.com" class='icons__link' target="_blank")
+                                    svg(width="24" height="22").in
+                                        use(xlink:href="assets/images/sprite.svg#in").in__icon.icon
+                    .blog-section-1__right
+                        .menu-hamb
+                            span.menu-humb__line
+                            span.menu-humb__line
+                            span.menu-humb__line
+                .blog-section-1__middle
+                    .avatar
+                        .avatar__box.avatar__box--blog
+                            img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
+                        .avatar__title.avatar__blog
+                            h1.title.title--big-white.title--blog Блог
+                                svg(width="303" height="208").svg-bg.svg-bg__blog
+                                    use(xlink:href="assets/images/sprite.svg#blog_header").svg-bg__img.svg-bg__img-blog
+                            .avatar__info.avatar__info--blog Статьи, которые я написал
+                .blog-section-1__bottom
+                    a(href="#toDown").arrow.arrow--toDown
+                        svg(width="26" height="16")
+                            use(xlink:href="assets/images/sprite.svg#arrow_down").arrow__icon
+                .section-1-header-triangle
+                    .triangle-box
+                        svg.traingle-box__item(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 900 180', preserveaspectratio='none')
+                            polygon.traingle-box__left(points='0,0   0,180   900,180   0,0')
+                        svg.traingle-box__item(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 900 180', preserveaspectratio='none')
+                            polygon.traingle-box__right(points='0,180   900,180   900,0   0,180')
+            section.blog-section-2(id="toDown")
+                .blog-section-2__content
+                    .blog-section-2__left
+                        ul.article-list
+                            li.article-list__item
+                                a(href="#").article-list__link.article-list__link--active  Самое важное в SASS
+                            li.article-list__item
+                                a(href="#").article-list__link Приёмы в вёрстке, без которых не обходится ни один сайт
+                            li.article-list__item
+                                a(href="#").article-list__link Самый необходимый набор Gulp плагинов
+                            li.article-list__item
+                                a(href="#").article-list__link Почему я выбрал Jade
+                    .blog-section-2__center
+                        article.article
+                            .title.title--noline Самое важное в SASS
+                            .article__data 22 ноября 2016
+                            .article__text
+                                p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                                p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                            .article__code
+                                img(src="assets/images/code.png" alt="code")
+                        article.article
+                            .title.title--noline Приёмы в вёрстке, без которых не обходится ни один сайт
+                            .article__data 13 ноября 2016
+                            .article__text
+                                p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                                p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+            section.blog__section-3
+                .footer
+                    .footer__top
+                        .footer__menu
+                            nav.nav-footer
+                                ul.nav-footer__list
+                                    li.nav-footer__item
+                                        a(href="works.html").nav-footer__link Мои работы
+                                    li.nav-footer__item
+                                        a(href="about.html").nav-footer__link Обо мне
+                                    li.nav-footer__item
+                                        a(href="blog.html").nav-footer__link Блог
+                                    li.nav-footer__item
+                                        a(href="login.html").nav-footer__link Авторизация
+                        .footer__socials
+                            ul.socials-footer
+                                li.socials-footer__item
+                                    a(href="#").socials-footer__link 
+                                        svg(width="36" height="36").socials-footer__box
+                                            use(xlink:href="assets/images/sprite.svg#vk_round").socials-footer__icon
+                                            use(xlink:href="assets/images/sprite.svg#vk_round").socials-footer__icon--hover
+                                li.socials-footer__item
+                                    a(href="#").socials-footer__link 
+                                        svg(width="36" height="36").socials-footer__box
+                                            use(xlink:href="assets/images/sprite.svg#github_round").socials-footer__icon
+                                            use(xlink:href="assets/images/sprite.svg#github_round").socials-footer__icon--hover
+                                li.socials-footer__item
+                                    a(href="#").socials-footer__link 
+                                        svg(width="36" height="36").socials-footer__box
+                                            use(xlink:href="assets/images/sprite.svg#in_round").socials-footer__icon
+                                            use(xlink:href="assets/images/sprite.svg#in_round").socials-footer__icon--hover
+
+                    .footer__bottom
+                        .footer__info
+                            .about-short Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+                        .footer__copyright
+                            .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016
+        script(src="assets/scripts/components/jquery-3.2.1.min.js")
+        script(src='assets/scripts/components/common.js')
+                    

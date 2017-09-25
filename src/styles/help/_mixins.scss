@@ -1,0 +1,40 @@
+@mixin fontFamily ($familyName, $nameFolder, $weight) {
+  @font-face {
+    font-family: "#{$familyName}";
+    src: url("../fonts/" + $nameFolder + "/" + $nameFolder + "-" + $weight + ".eot");
+    src: url("../fonts/" + $nameFolder + "/" + $nameFolder + "-" + $weight + ".eot?#iefix") format("embedded-opentype"), 
+         url("../fonts/" + $nameFolder + "/" + $nameFolder + "-" + $weight + ".ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@mixin size-1320{
+  @media (max-width: 1320px) {
+    @content;
+  }
+}
+
+@mixin size-1200{
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin size-768{
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin size-645{
+  @media (max-width: 645px) {
+    @content;
+  }
+}
+
+@mixin size-320{
+  @media (max-width: 320px) {
+    @content;
+  }
+}

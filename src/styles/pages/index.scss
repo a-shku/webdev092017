@@ -1,0 +1,233 @@
+.welcome {
+    width: 100;
+    height: 100%;
+}
+.section {
+    min-height: 100vh;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../images/bg_welcome.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+// верхний блок
+.welcome__top {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 25px;
+    padding-right: 100px;
+    @include size-1200 {
+        padding-right: 20px;
+    }
+
+    @include size-768 {
+        padding-right: 25px;
+    }
+
+    @include size-645 {
+        justify-content: center;
+        padding-right: 0;
+        padding-top: 10px;
+    }
+}
+
+.login__link {
+    color: #fff;
+    display: inline-block;
+    padding: 16px 28px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    @include size-645 {
+        font-size: 14px;
+    }
+    &:hover {
+        background-color: #fff;
+        color: $color_green_1;
+    }
+}
+
+// центральный блок
+.welcome__center {
+    // position: absolute;
+    // top: 50%;
+    // right: 50%;
+    // transform: translate(50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 380px;
+    @include size-645 {
+        min-width: 300px;
+    }
+    background-color: rgba(252, 252, 252, 0.8);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.avatar__box {
+    margin: 40px auto 20px;
+    width: 147px;
+    height: 147px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.welcome__center .avatar__i {
+    font-size: 28px;
+    text-align: center;
+    @include size-645 {
+        font-size: 21px;
+    }
+}
+
+.avatar__info {
+    font-family: RobotoRegular;
+    text-align: center;
+    margin-top: 10px;
+    @include size-645 {
+        font-size: 14px;
+    }
+
+}
+
+
+
+// социалки
+.main__socials {
+margin-bottom: 40px;
+margin-top: 38px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.main__socials .icon {
+    fill: #70d1c6 !important;
+}
+
+.icons__item + .icons__item {
+    margin-left: 28px;
+}
+
+.icons__link {
+    font-size: 22px;
+    color: #5CFCE9;
+}
+
+.icons__item:hover .icon {
+    fill: #fff !important;
+}
+
+
+
+// меню
+.nav {
+    background-color: rgba(0, 191, 165, 0.851);
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.nav__item {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(0, 150, 136, 0.5);
+    }
+}
+
+.nav__link {
+    color: #fff;
+    display: block;
+    line-height: 45px;
+    @include size-645 {
+        font-size: 14px;
+    }
+}
+
+.nav__item + .nav__item {
+    border-left: 2px solid #73c8c0;
+}
+
+
+
+// нижний блок
+.welcome__bottom {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    @include size-645 {
+        padding-bottom: 10px;
+    }
+    text-align: center;
+}
+
+.bottom-text {
+    color: #ffffff;
+    font-family: RobotoLight;
+    @include size-645 {
+        font-size: 14px;
+    }
+}
+
+
+// flipping_________________________
+.hidden {
+    display: none;
+}
+
+.box-effect {
+    position: relative;
+    max-width: 380px;
+    max-height: 500px;
+}
+
+.box-effect__front,
+.box-effect__back {
+
+}
+
+.box-effect__front,
+.box-effect__back {
+backface-visibility: hidden;
+transition: transform 0.6s;
+}
+
+
+.box-effect__back {
+    transform: rotateY(-180deg);
+    position: absolute;
+    top: 0;
+    }
+
+
+// flipping__for click
+.box-effect.effect__click.flipped .box-effect__front {
+transform: rotateY(-180deg);
+}
+
+.box-effect.effect__click.flipped .box-effect__back {
+transform: rotateY(0);
+}
+

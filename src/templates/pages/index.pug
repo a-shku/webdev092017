@@ -1,0 +1,90 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Main
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        link(rel='stylesheet' href='assets/styles/main.min.css')
+
+body
+  .welcome
+    section.section
+      .welcome__top
+        .login
+          a.login__link.changeBox(href="#") Авторизоваться
+      .welcome__center
+        .box-effect.effect__click
+          .box-effect__front
+            .main
+              .main__box
+                .avatar
+                  .avatar__box
+                    img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
+                  .avatar__title
+                    h1.avatar__i Владимир Астахов
+                    .avatar__info Личный сайт веб разработчика
+                .main__socials
+                  ul.icons
+                      li.icons__item
+                          a(href="https://vk.com/id27837868" class='icons__link' target="_blank")
+                              svg(width="31" height="17").vk
+                                  use(xlink:href="assets/images/sprite.svg#vk").vk__icon.icon
+                      li.icons__item
+                          a(href="https://github.com/Red02Raccoon" class='icons__link' target="_blank")
+                              svg(width="26" height="22").github
+                                  use(xlink:href="assets/images/sprite.svg#github").github__icon.icon
+                      li.icons__item
+                          a(href="https://www.linkedin.com" class='icons__link' target="_blank")
+                              svg(width="24" height="22").in
+                                  use(xlink:href="assets/images/sprite.svg#in").in__icon.icon
+              nav.nav
+                ul.nav__list
+                  li.nav__item
+                    a(href="works.html").nav__link Мои работы
+                  li.nav__item
+                    a(href="about.html").nav__link Обо мне
+                  li.nav__item
+                    a(href="blog.html").nav__link Блог
+          .box-effect__back
+            .enter
+              .enter__title
+                  h1.enter__text.title Авторизуйтесь
+              form.form(action="#")
+                  .login-name
+                      label(for="name").login-name__icon.fa.fa-user
+                      input(type="text" name="name" id="name").login-name__field
+                  .password
+                      label(for="password").password__icon.fa.fa-key
+                      input(type="password" id="password" name="password").password__field
+                  .checkbox
+                      input(type="checkbox" id="check" name="check" value='yes').checkbox__item
+                      label(for="check").checkbox__label
+                          i.fa.fa-check.checkbox__icon(aria-hidden='true')
+                      span.checkbox__text Я человек
+                  .radio
+                      .radio__title Вы точно не робот?
+                      .radio__var
+                          .radio__sure
+                              input(name="sure" type="radio" value="yes" id="sure").radio__item
+                              label(for="sure").radio__label
+                              span.radio__text Да
+                          .radio__no
+                              input(name="sure" type="radio" value="no" id="no").radio__item
+                              label(for="no").radio__label
+                              span.radio__text Не уверен
+              nav.nav
+                  ul.nav__list
+                      li.nav__item
+                          a(href="#").nav__link.changeBox На главную
+                      li.nav__item
+                          a(href="").nav__link Войти
+      .welcome__bottom
+        .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016
+  script(src='assets/scripts/components/flip.js')
+
+
+
+

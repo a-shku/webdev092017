@@ -1,0 +1,47 @@
+{
+  "name": "webdev092017_assembly",
+  "version": "1.0.0",
+  "description": ">Сборка для финального проекта на курсе \"Продвинутый веб\"",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize": "^0.3.1",
+    "normalize-scss": "^7.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "eslint": "^4.6.1",
+    "eslint-loader": "^1.9.0",
+    "gulp": "^4.0.0-alpha.2",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-cheerio": "^0.6.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-svg-sprite": "^1.3.7",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-wait": "0.0.2",
+    "gulp-webpack": "^1.5.0",
+    "node-normalize-scss": "^3.0.0",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.2",
+    "webpack": "^3.5.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set NODE_ENV=development & gulp",
+    "build": "set NODE_ENV=production & gulp build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

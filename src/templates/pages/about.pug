@@ -1,0 +1,200 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Обо мне
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        link(rel='stylesheet' href='assets/styles/main.min.css')
+    body
+        .fullscreen
+            nav.nav-footer.nav-footer--fullscreen
+                ul.nav-footer__list.nav-footer__list--fullscreen
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="works.html").nav-footer__link.nav-footer__link.nav-footer__link--fullscreen Мои работы
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="about.html").nav-footer__link.nav-footer__link--fullscreen Обо мне
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="blog.html").nav-footer__link.nav-footer__link--fullscreen Блог
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="login.html").nav-footer__link.nav-footer__link--fullscreen Авторизация
+        .about
+            section.section.about__section-1
+                .section-1-header
+                    .section-1-header__left
+                        ul.icons
+                            li.icons__item
+                                a(href="https://vk.com/id27837868" target="_blank" class='icons__link')
+                                    svg(width="31" height="17").vk
+                                        use(xlink:href="assets/images/sprite.svg#vk").vk__icon.icon
+                            li.icons__item
+                                a(href="https://github.com/Red02Raccoon" class='icons__link' target="_blank")
+                                    svg(width="26" height="22").github
+                                        use(xlink:href="assets/images/sprite.svg#github").github__icon.icon
+                            li.icons__item
+                                a(href="https://www.linkedin.com" class='icons__link' target="_blank")
+                                    svg(width="24" height="22").in
+                                        use(xlink:href="assets/images/sprite.svg#in").in__icon.icon
+                    .section-1-header__right
+                        .menu-hamb
+                            span.menu-humb__line
+                            span.menu-humb__line
+                            span.menu-humb__line
+                .section-1-header__middle
+                    .avatar
+                        .avatar__box
+                            img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
+                        .avatar__title.avatar__title--white
+                            h1.avatar__i Владимир Астахов
+                            .avatar__info.avatar__info--white Личный сайт веб разработчика
+                        .about-section-1__container-svg
+                            img(src="assets/images/portfolio_header.svg", alt="svg__bg").about-section-1__svg-img
+                .section-1-header__bottom
+                    a(href="#nextSection").arrow.arrow--toDown
+                        svg(width="26" height="16")
+                            use(xlink:href="assets/images/sprite.svg#arrow_down").arrow__icon
+                .section-1-header-triangle
+                    .triangle-box
+                        svg.traingle-box__item(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 900 180', preserveaspectratio='none')
+                            polygon.traingle-box__left(points='0,0   0,180   900,180   0,0')
+                        svg.traingle-box__item(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 900 180', preserveaspectratio='none')
+                            polygon.traingle-box__right(points='0,180   900,180   900,0   0,180')
+
+            section.about-section-2(id="nextSection")
+                .about-section-2__left
+                    .about-section-2__title
+                        h1.title.title--big.title-about Обо мне
+                        .about-section-2__container-svg
+                            svg(viewBox="0 0 498.161 175.44").svg-bg
+                                use(xlink:href="assets/images/sprite.svg#about_header").svg-bg__img.svg-bg__img--about
+                    .about-section-2__info
+                        .about-me
+                            .about-me__avatar
+                                img(src="assets/images/ava_big.png", alt="ava_big").about-me__image
+                            .about-me__text
+                                .about-me__subtitle.title Кто я
+                                .about-me__myInfo
+                                    p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+                .about-section-2__right
+                    .about-section-2__title--small
+                        h1.title Чем я могу быть вам полезен
+                    .about-section-2__text
+                        p.about-section-2__myInfo Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                    .about-section-2__skills
+                        .skills
+                            .skills__frontend
+                                .skills__title Frontend
+                                ul.skills__list
+                                    li.skills__item
+                                        svg.skills__elem#html
+                                        .skills__html.skill__text HTML5
+                                    li.skills__item
+                                        svg.skills__elem#css
+                                        .skills__css.skill__text CSS3
+                                    li.skills__item
+                                        svg.skills__elem#js
+                                        .skills__js.skill__text JavaScript &amp; jQuery
+                            .skills__backend
+                                .skills__title Backend
+                                ul.skills__list
+                                    li.skills__item
+                                        svg.skills__elem#php 
+                                        .skills__php.skill__text PHP
+                                    li.skills__item
+                                        svg.skills__elem#mySql
+                                        .skills__mySql.skill__text mySQL
+                                    li.skills__item
+                                        svg.skills__elem#node
+                                        .skills__node.skill__text Node.js &amp; npm
+                                    li.skills__item
+                                        svg.skills__elem#mongo
+                                        .skills__mongo.skill__text Mongo.db
+                            .skills__workflow
+                                .skills__title WorkFlow
+                                ul.skills__list
+                                    li.skills__item
+                                        svg.skills__elem#git
+                                        .skills__git.skill__text Git
+                                    li.skills__item
+                                        svg.skills__elem#gulp
+                                        .skills__gulp.skill__text Gulp
+                                    li.skills__item
+                                        svg.skills__elem#bower
+                                        .skills__bower.skill__text bower
+            section.about__section-3
+                .map#map
+                .about__contact
+                    .contact
+                        h1.title Контакты
+                        .contact__socials
+                            ul.contact__list
+                                li.contact__item
+                                    a.contact__link(href="skype:SkypeUser?call")
+                                        svg(width="24" height="24").contact__box
+                                            use(xlink:href="assets/images/sprite.svg#skype").contact__skype-icon.contact__icon
+                                        span.contact__skype-text skype_kdn
+                                li.contact__item
+                                    a.contact__link(href="mailto:astahov@gmail.com")
+                                        svg(width="23" height="17").contact__box
+                                            use(xlink:href="assets/images/sprite.svg#envelope").contact__mail-icon.contact__icon
+                                        span.contact__mail-text astahov@gmail.com
+                                li.contact__item
+                                    a.contact__link(href="tel:+79312009324")
+                                        svg(width="19" height="18").contact__box
+                                            use(xlink:href="assets/images/sprite.svg#phone").contact__phone-icon.contact__icon
+                                        span.contact__phone-text +7 931 200 93 24
+                                li.contact__item
+                                    span.contact__map
+                                        svg(width="19" height="24").contact__box
+                                            use(xlink:href="assets/images/sprite.svg#map_marker").contact__map-icon.contact__icon
+                                        span.contact__map-text г.Новосибирск, ул. Инская, д. 5
+            section.about__section-4
+                .footer
+                    .footer__top
+                        .footer__menu
+                            nav.nav-footer
+                                ul.nav-footer__list
+                                    li.nav-footer__item
+                                        a(href="works.html").nav-footer__link Мои работы
+                                    li.nav-footer__item
+                                        a(href="about.html").nav-footer__link Обо мне
+                                    li.nav-footer__item
+                                        a(href="blog.html").nav-footer__link Блог
+                                    li.nav-footer__item
+                                        a(href="login.html").nav-footer__link Авторизация
+                        .footer__socials
+                            ul.socials-footer
+                                li.socials-footer__item
+                                    a(href="https://vk.com/id27837868" target="_blank").socials-footer__link 
+                                        svg(width="36" height="36").socials-footer__box
+                                            use(xlink:href="assets/images/sprite.svg#vk_round").socials-footer__icon
+                                            use(xlink:href="assets/images/sprite.svg#vk_round").socials-footer__icon--hover
+                                li.socials-footer__item
+                                    a(href="https://github.com/Red02Raccoon" target="_blank").socials-footer__link 
+                                        svg(width="36" height="36").socials-footer__box
+                                            use(xlink:href="assets/images/sprite.svg#github_round").socials-footer__icon
+                                            use(xlink:href="assets/images/sprite.svg#github_round").socials-footer__icon--hover
+                                li.socials-footer__item
+                                    a(href="https://www.linkedin.com" target="_blank").socials-footer__link 
+                                        svg(width="36" height="36").socials-footer__box
+                                            use(xlink:href="assets/images/sprite.svg#in_round").socials-footer__icon
+                                            use(xlink:href="assets/images/sprite.svg#in_round").socials-footer__icon--hover
+
+                    .footer__bottom
+                        .footer__info
+                            .about-short Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+                        .footer__copyright
+                            .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016
+        script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD-_7rbiILzu1_9WsTomzKQZO0FMmtNePU')
+        script(src="assets/scripts/components/map.js")
+        script(src="assets/scripts/components/jquery-3.2.1.min.js")
+        script(src='assets/scripts/components/snap.svg-min.js')
+        script(src='assets/scripts/components/skill.js')
+        script(src='assets/scripts/components/common.js')
+
+
+                    
+

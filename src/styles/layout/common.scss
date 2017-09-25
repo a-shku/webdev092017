@@ -1,0 +1,62 @@
+/* основные цвета */
+
+$color_1: #373e42;
+$color_text_dark: #455a64;
+$color_3: #009688;
+$color_green_1: #00bfa5;
+$color_error: #e44845;
+$color_gray: #d6d6d6;
+
+/* общие стили и сброс */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+}
+
+html, body, ul, p {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    font-family: RobotoMedium, sans-serif;
+    font-size: 16px;
+    line-height: 1.42;
+	color: $color_text_dark;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+}
+button {
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $color_text_dark;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 16px;
+}
+ img {
+     max-width: 100%;
+ }

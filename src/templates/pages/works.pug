@@ -1,0 +1,198 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Мои работы
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        link(rel='stylesheet' href='assets/styles/main.min.css')
+    body
+        .fullscreen
+            nav.nav-footer.nav-footer--fullscreen
+                ul.nav-footer__list.nav-footer__list--fullscreen
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="works.html").nav-footer__link.nav-footer__link.nav-footer__link--fullscreen Мои работы
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="about.html").nav-footer__link.nav-footer__link--fullscreen Обо мне
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="blog.html").nav-footer__link.nav-footer__link--fullscreen Блог
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="login.html").nav-footer__link.nav-footer__link--fullscreen Авторизация
+        .works
+            section.section.works__section-1(id='prevSection')
+                .section-1-header
+                    .section-1-header__left
+                        ul.icons
+                            li.icons__item
+                                a(href="#" class='icons__link')
+                                    svg(width="31" height="17").vk
+                                        use(xlink:href="assets/images/sprite.svg#vk").vk__icon.icon
+                            li.icons__item
+                                a(href="#" class='icons__link')
+                                    svg(width="26" height="22").github
+                                        use(xlink:href="assets/images/sprite.svg#github").github__icon.icon
+                            li.icons__item
+                                a(href="#" class='icons__link')
+                                    svg(width="24" height="22").in
+                                        use(xlink:href="assets/images/sprite.svg#in").in__icon.icon
+                    .work-section-1__right
+                        .menu-hamb
+                            span.menu-humb__line
+                            span.menu-humb__line
+                            span.menu-humb__line
+                .section-1-header__middle
+                    .avatar
+                        .avatar__box
+                            img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
+                        .avatar__title.avatar__title--white
+                            h1.avatar__i Владимир Астахов
+                            .avatar__info.avatar__info--white Личный сайт веб разработчика
+                        .about-section-1__container-svg
+                            img(src="assets/images/portfolio_header.svg", alt="svg__bg").about-section-1__svg-img
+                .section-1-header__bottom.works__bottom
+                    a(href="#toNext").arrow.arrow--toDown
+                        svg(width="26" height="16")
+                            use(xlink:href="assets/images/sprite.svg#arrow_down").arrow__icon
+                .section-1-header-triangle
+                    .triangle-box
+                        svg.traingle-box__item(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 900 180', preserveaspectratio='none')
+                            polygon.traingle-box__left(points='0,0   0,180   900,180   0,0')
+                        svg.traingle-box__item(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 900 180', preserveaspectratio='none')
+                            polygon.traingle-box__right(points='0,180   900,180   900,0   0,180')
+            section.works-section-2(id="toNext")
+                .works-section-2__top
+                    h1.title.title--big.works__title Мои работы
+                        .works-section-1__container-svg
+                            svg(viewBox='0 0 505.101 165.036').svg-bg.svg-bg__works
+                                use(xlink:href="assets/images/sprite.svg#works_header").svg-bg__img.svg-bg__img-works
+                .works-section-2__content
+                    .works-section-2__left
+                        h1.title.title--twoLine Сайт школы онлайн образования
+                        .section-2__tech
+                            .tech Html, Css, Javascript
+                        .section-2__button
+                            .button
+                                a.button__link(href='#')
+                                    svg(width="20" height="19").link__box-svg
+                                        use.link__icon(xlink:href='assets/images/sprite.svg#link')
+                                    | 		Посмотреть сайт
+                    .works-section-2__site
+                        .view-site
+                            ul.view-site__list
+                                li.view-site__item
+                                    img(src="assets/images/works/1.png", alt="work-1").view-site__img
+                    .works-section-2__control
+                        .prev
+                            ul.prev__list
+                                li.prev__item
+                                    .prev__box
+                                        img(src="assets/images/works/2.png", alt="work-2").prev__slide
+                            .control__prev
+                                svg(width="43" height="27").arrow-portfolio__box-prev
+                                    use(xlink:href="assets/images/sprite.svg#portf_arrow_down").arrow-portfolio__icon-prev
+                        .next
+                            ul.next__list
+                                li.next__item
+                                    .next__box
+                                        img(src="assets/images/works/3.png", alt="work-3").next__slide
+                            .control__next
+                                svg(width="43" height="27").arrow-portfolio__box-next
+                                    use(xlink:href="assets/images/sprite.svg#portf_arrow_up").arrow-portfolio__icon-next
+            section.works-section-3.blur
+                .blur__back
+                    img.blur__image(src="assets/images/bg_works.jpg" alt="blur")
+                .works-section-3__title
+                    .title-box
+                        h1.title.title--big.title--twoLine Что обо мне говорят
+                            .works-section-3__container-svg
+                                svg(viewBox="0 0 498.161 175.44").svg-bg.svg-bg__works
+                                    use(xlink:href="assets/images/sprite.svg#about_header").svg-bg__img.svg-bg__img-works
+                .works-section-3__content
+                    .works-section-3__left
+                        .note
+                            .note__icon-box
+                                i.fa.fa-quote-left.note__icon
+                            .note__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                            .note__author
+                                .note__img
+                                    img.note__ava-1(src="assets/images/dima.jpg", alt="author_1")
+                                .note__who
+                                    .note__author-name Ковальчук Дмитрий
+                                    .note__author-prof основатель LoftSchool
+                    .works-section-3__right
+                        .note
+                            .note__icon-box
+                                i.fa.fa-quote-left.note__icon
+                            .note__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                            .note__author
+                                .note__img
+                                    img.note__ava(src="assets/images/vova.jpg", alt="author_2")
+                                .note__who
+                                    .note__author-name Владимир Сабанцев
+                                    .note__author-prof преподаватель
+                .works-section-3__main
+                    .conect
+                        .blur-form__wrapper
+                            .blur-form__img
+                        form.connect__form(action="#")
+                            .conect__form__container
+                                .title__box
+                                    h1.title.conect__title Связаться со мной
+                                .conect__input-box
+                                    input(type="text" placeholder="Имя").form__input.conect__name
+                                .conect__input-box
+                                    input(type="email" placeholder="E-mail").form__input.conect__mail
+                                .conect__input-box
+                                    textarea(name="massage_from_user" placeholder="Ваше сообщение" ).form__input.conect__message
+                                .conect__button
+                                    ul.connect__list
+                                        li.conect__item
+                                            button(type="submit").conect__link Отправить
+                                        li.conect__item
+                                            button(type="reset").conect__link Очистить
+                .works-section-3__arrow
+                    a(href="#prevSection").arrow.arrow--toUp
+                        svg(width="26" height="16")
+                            use(xlink:href="assets/images/sprite.svg#arrow_down").arrow__icon
+                section.works__section-4
+                    .footer
+                        .footer__top
+                            .footer__menu
+                                nav.nav-footer
+                                    ul.nav-footer__list
+                                        li.nav-footer__item
+                                            a(href="works.html").nav-footer__link Мои работы
+                                        li.nav-footer__item
+                                            a(href="about.html").nav-footer__link Обо мне
+                                        li.nav-footer__item
+                                            a(href="blog.html").nav-footer__link Блог
+                                        li.nav-footer__item
+                                            a(href="login.html").nav-footer__link Авторизация
+                            .footer__socials
+                                ul.socials-footer
+                                    li.socials-footer__item
+                                        a(href="https://vk.com/id27837868" target="_blank").socials-footer__link 
+                                            svg(width="36" height="36").socials-footer__box
+                                                use(xlink:href="assets/images/sprite.svg#vk_round").socials-footer__icon
+                                                use(xlink:href="assets/images/sprite.svg#vk_round").socials-footer__icon--hover
+                                    li.socials-footer__item
+                                        a(href="https://github.com/Red02Raccoon" target="_blank").socials-footer__link 
+                                            svg(width="36" height="36").socials-footer__box
+                                                use(xlink:href="assets/images/sprite.svg#github_round").socials-footer__icon
+                                                use(xlink:href="assets/images/sprite.svg#github_round").socials-footer__icon--hover
+                                    li.socials-footer__item
+                                        a(href="https://www.linkedin.com" target="_blank").socials-footer__link 
+                                            svg(width="36" height="36").socials-footer__box
+                                                use(xlink:href="assets/images/sprite.svg#in_round").socials-footer__icon
+                                                use(xlink:href="assets/images/sprite.svg#in_round").socials-footer__icon--hover
+
+                        .footer__bottom
+                            .footer__info
+                                .about-short Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+                            .footer__copyright
+                                .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016
+        script(src="assets/scripts/components/jquery-3.2.1.min.js")
+        script(src='assets/scripts/components/blur.js')
+        script(src='assets/scripts/components/common.js')
