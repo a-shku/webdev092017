@@ -1,12 +1,13 @@
 {
-  "name": "webdev092017_assembly",
+  "name": "webdev092017",
   "version": "1.0.0",
   "description": ">Сборка для финального проекта на курсе \"Продвинутый веб\"",
   "main": "index.js",
   "dependencies": {
     "jquery": "^3.2.1",
     "normalize": "^0.3.1",
-    "normalize-scss": "^7.0.0"
+    "normalize-scss": "^7.0.0",
+    "vue": "^2.4.4"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
@@ -37,9 +38,10 @@
     "webpack": "^3.5.6"
   },
   "scripts": {
+  	"build": "webpack src/scripts/main.js dist/assets/scripts/main.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "set NODE_ENV=development & gulp",
-    "build": "set NODE_ENV=production & gulp build"
+    "gulpBuild": "set NODE_ENV=production & gulp build"
   },
   "keywords": [],
   "author": "",

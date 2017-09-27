@@ -1,4 +1,4 @@
-# webdev092017_assembly
+# webdev092017
 
 
 >Сборка для финального проекта на курсе "Продвинутый веб"
@@ -11,4 +11,4 @@
 - npm i -g npm@5.3
 - npm run build
 
-## [Демо]()
+## [Демо](https://energy1.github.io/dist)
