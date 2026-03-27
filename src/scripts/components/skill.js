@@ -64,7 +64,7 @@ class Skill {
   const gulp = new Skill(130, 130, '#gulp', 0.45);
   const bower = new Skill(130, 130, '#bower', 0.45);
   
-  anim.onclick = function() {
+  function drawAll() {
     html.draw();
     css.draw();
     js.draw();
@@ -75,4 +75,17 @@ class Skill {
     git.draw();
     gulp.draw();
     bower.draw();
-  };
+  }
+
+  const skillsSection = document.querySelector('.about-section-2__skills');
+  if (skillsSection && 'IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting) {
+        drawAll();
+        observer.disconnect();
+      }
+    }, { threshold: 0.3 });
+    observer.observe(skillsSection);
+  } else if (skillsSection) {
+    drawAll();
+  }

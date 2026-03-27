@@ -10,7 +10,7 @@ $(document).ready(function(){
         blurSection = $('.blur'),
         blur = $('.blur-form__img'),
         // del =parseInt($('.works-section-3__arrow').css("margin").substr(0,5), "10"),
-        posY = blurSection.offset().top - blur.offset().topgu,
+        posY = blurSection.offset().top - blur.offset().top,
         posX = blurSection.offset().left - blur.offset().left;
 
         
